@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+body {
+	background-color: white;
+	font-family: sans-serif;
+	height: 100%;
+	width: 90%;
+	margin: 0;
+	}
+	
+/* ###########################--ETC--############################## */	
+
+.hr_line{
+	border: 1px #EAEAEA solid;
+	position: static;
+	margin-left: 10px;
+	width: 100%;
+}
+
+/* ###########################--TOP--############################## */
+
+header {
+	display: inline-block;
+	border-top: pink 3px solid;
+	height: 20%;
+	width: 100%;
+	padding: 10px 0px 10px;
+	margin:5px 0px 5px 10px;
+	position: static;
+	z-index: 1;
+	}
+	
+#image {
+	height: 300px;
+	width : 100%;
+	display: inline-block;
+	margin: 10px 30px 30px 10px;
+	border: 1px solid coral;
+	position: static;
+	z-index: 0;
+	text-align: center;
+	background: transparent;
+	vertical-align: middle;
+	line-height: 300px;
+	}	
+
+ul.container > li.top > a,
+ul.container > li.top > ul.submenu > li > a
+{
+	text-decoration: none;
+	display: block;
+	color: black;
+	}
+
+	/*######-- DROP DOWN -- ######*/
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	cursor:pointer;
+	background: transparent;
+	}
+
+.container{}
+ul.container > li{
+	display:inline-block;
+	width:150px; 
+	height: 20px;
+	padding:5px 10px;
+	text-align:center;
+	position: relative;
+	}
+ul.container > li:hover { 
+	border-bottom: 3px pink solid;
+	}
+	
+ul.container > li ul.submenu { 
+	display:none;
+	position:absolute;
+	top:33px;
+	left:0;
+	}
+ul.container > li:hover ul.submenu { 
+	display:block; 
+	}	
+	
+ul.container > li ul.submenu > li { 
+	display:inline-block; 
+	width:150px; 
+	padding:5px 10px; 
+	background:white; 
+	text-align:center;
+	}
+ul.container > li ul.submenu > li:hover {
+	border-bottom: 1px pink solid;
+	text-decoration: underline;
+	}
+	/*######-- DROP DOWN -- ######*/
+
+
+/* ###########################--MIDDLE--############################## */
+
+	/*######-- MAIN CONTENTS --######*/
+#content {
+	width: 100%;
+	margin: 10px 9px 10px;
+	background-color: transparent;
+	position: static;
+	height: 50%;
+	}
+
+#areaMain {
+	position: relative;
+	float: right;
+	padding: 10px;
+	border: coral 1px solid;
+	width: 85%;
+	}
+	
+#areaMain table{
+	width: 100%;
+	}
+
+#areaMain th, td{
+	border:1px solid pink;
+	text-align:center;
+	padding: 10px;
+	}
+	
+#areaMain th {
+	background: pink;
+}
+	
+.post {
+	border-spacing: 5px;
+	}
+	
+.post tr:hover {
+	background: pink;
+	cursor: pointer;
+}
+
+#areaMain div {
+	width: 99%;
+	text-align: center;
+	background: coral;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+#areaMain > #pageNum a {
+	color: white;
+}
+	/*######-- MAIN CONTENTS --######*/
+
+	/*######-- LEFT SIDE BAR --######*/
+#areaSub {
+	border: pink 1px solid;
+	width: 10%;
+	float: left;
+	padding: 5px 5px 5px;
+	position: relative;
+	height: 360px;
+	}
+	
+#content a {
+	text-decoration: none;
+	color: black;
+}
+
+#content a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+	/*######-- LEFT SIDE BAR --######*/
+
+/* ###########################--BOTTOM--############################## */
+
+footer {
+	display: inline-block;
+	position: static;
+	margin-left: 10px;
+	margin-top:10px;
+	border-top: pink 3px solid;
+	height: 30%;
+	width: 99%;
+	clear: both;
+	padding: 10px;
+	}
+	
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: blue;
+}
