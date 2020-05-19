@@ -12,7 +12,9 @@
 
 	<!-- 커스텀 에러페이지(?)를 사용하기 위하여 기술하는 부분 -->
   <error-page>
+	  <!-- 아래에 발생할 오류의 코드를 적는다. -->
     <error-code>500</error-code>
+	  <!-- 위의 오류코드가 발생시 아래의 경로의 페이지로 이동한다. -->
     <location>/6주차/error/500code.jsp</location>
   </error-page>
 	
